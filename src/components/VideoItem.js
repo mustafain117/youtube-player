@@ -3,7 +3,7 @@ import './VideoItem.css'
 
 const VideoItem = ({video, onVideoSelect}) => {
     return (
-        <div onClick={() => onVideoSelect(video)}className="video-item item">
+        <div onClick={() => onVideoSelect(video)} className="video-item item">
             <img className="ui image" src={video.snippet.thumbnails.default.url} alt={video.snippet.description} ></img>
             <div className="content">
                 <div className="header">
